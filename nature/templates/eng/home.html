@@ -1,0 +1,132 @@
+{% extends 'eng/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="header">
+	<nav>
+		<a href="{% url 'pages_eng:home_eng' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages_eng:home_eng' %}">HOME</a></li>
+				<li><a href="{% url 'pages_eng:about_eng' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages_eng:source_eng' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages_eng:blog_eng' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+				<li><a href="{% url 'pages:home' %}" class="hero-btn red-btn">Rus. Version</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+<div class="text-box">
+	<h1>Nature</h1>
+	<p>Save animals and nature from extinction</p>
+	<a href="{% url 'pages_eng:source_eng' %}" class="hero-btn">Visit Us to Find Out More</a>
+</div>
+
+</section>
+
+
+<!----- Nature ----->
+
+<sectio class="course">
+	<h1>Problems</h1>
+	<p>Our ideals should be at the proper height, not architectural excesses. Can anyone be convinced of this. I honestly tried, but didn't succeed.</p>
+	<div class="row">
+		<div class="course-col">
+			<h3>Air pollution</h3>
+			<p>Microscopic pollutants - PM2.5 - are so small that they can penetrate our body's protective barriers, such as mucous membranes, and destroy our lungs, heart and brain.</p>
+		</div>
+		<div class="course-col">
+			<h3>Killing animals</h3>
+			<p>It takes 2 liters of oil to get a kilogram of meat. With modern methods of animal husbandry, more poisonous gases are emitted than in all vehicles in the aggregate. Therefore, everyone who is fighting for the environment and convincing us to eat less meat.</p>
+		</div>
+		<div class="course-col">
+			<h3>Destruction of wildlife</h3>
+			<p>Between 1980 and 2000, 100 million hectares of rainforest were lost, mainly through clearing forests in South America for grazing and in Southeast Asia for oil palm plantations.</p>
+		</div>
+	</div>
+</sectio>
+<!-- ----- Worlds ----- -->
+<section class="campus">
+	<h1>Environment</h1>
+	<p>"Gibraltar" I think of hundreds of unknown daredevils who die every year trying to get to this rock. For those who live in Africa, Gibraltar is a symbol of new life. Is it possible to forbid dreams of a better life, because this is what people have been striving for from time immemorial.</p>
+	<div class="row">
+		<div class="campus-col">
+			<img src="{% static 'img/nature.jpg' %}">
+			<div class="layer">
+				<h3>Nature</h3>
+			</div>
+		</div>
+		<div class="campus-col">
+			<img src="{% static 'img/panda.jpg' %}">
+			<div class="layer">
+				<h3>Animal</h3>
+			</div>
+		</div>
+		<div class="campus-col">
+			<img src="{% static 'img/cityRain.jpg' %}">
+			<div class="layer">
+				<h3>People</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ----- Facilities ----- -->
+<section class="facilities">
+	<h1>Out on a Limb</h1>
+	<p>We are so powerful now that we can empty the sea like this bath. We often receive warnings about an impending catastrophe, but we are not able to imagine when it already happened and it was on the Aral Sea.</p>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="{% static 'img/landMountain.jpg' %}">
+			<h3>Nature</h3>
+			<p>Who would have thought that this could be encountered here in Nepal. In the highest mountains, where the air would seem to be clean. Scientists have proven that at the top of the Himalayan ridge, the air is as polluted as in our cities. Due to the currents of atmospheric air, which is trapped by the mountains.</p>
+		</div>
+		<div class="facilities-col">
+			<img src="{% static 'img/oceanWhale.jpg' %}">
+			<h3>Animas</h3>
+			<p>Once oil gave whales a chance, they were hunted in the early 19th century. Their fat was burned in oil lamps, and machine parts were lubricated with it. When it became scarce, it was gradually replaced by oil, for the whales it became a salvation. A paradox or an illusion, for the hunt has begun again.</p>
+		</div>
+		<div class="facilities-col">
+			<img src="{% static 'img/china.jpg' %}">
+			<h3>People</h3>
+			<p>Intensive development of agriculture in the 60s in India. Saved from hunger, but at the same time depleted, subsoil waters. When the wells dry up here, they begin to dig ponds when the rainy season comes into play. We in our world simply forgot how important water is.</p>
+		</div>
+	</div>
+</section>
+<!-- ----- TestiMonials ----- -->
+
+<section class="testimonials">
+	<h1>What Our Student Says</h1>
+	<p>Yes, indeed, environmentalists are not born, they become. Our land is even more beautiful than one can imagine.</p>
+	<div class="testimonials-col">
+		<img src="{% static 'img/girl.jpg' %}">
+		<div>
+			<p>I gained a lot, learned a lot. Now I want you to familiarize yourself with this.</p>
+			<h3>Aiony Haust</h3>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+		</div>
+	</div>
+	<div class="testimonials-col">
+		<img src="{% static 'img/boy.jpg' %}">
+		<div>
+			<p>Thanks to this site, I got acquainted with all the beauty of the world that surrounds me.</p>
+			<h3>Nicolas Horn</h3>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-o"></i>
+		</div>
+	</div>
+</section>
+<!-- ----- Call To Action ----- -->
+<section class="cta">
+	<h1>Contact Us To Make <br>The World a Better Place</h1>
+	<a href="{% url 'pages:contact' %}" class="hero-btn">CONTACT US</a>
+</section>
+{% endblock %}

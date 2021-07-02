@@ -1,0 +1,72 @@
+{% extends 'eng/base.html' %}
+{% load static %}
+{% block title %}Blog{% endblock %}
+{% block content %}
+<section class="sub-header">
+	<nav>
+		<a href="{% url 'pages_eng:home_eng' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages_eng:home_eng' %}">HOME</a></li>
+				<li><a href="{% url 'pages_eng:about_eng' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages_eng:source_eng' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages_eng:blog_eng' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+				<li><a href="{% url 'pages:blog' %}" class="hero-btn red-btn">Rus. Version</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Our Program For Our Future</h1>
+</section>
+
+<!-- ----- Blog Page ----- -->
+<section class="blog-content">
+	<div class="row">
+		<div class="blog-left">
+			<img src="{% static 'img/success.jpg' %}">
+			<h2>Our Way To Success</h2>
+			<p>If earlier scientists had to prove that the climate crisis is real, now the inhabitants of the Planet notice with their own eyes climate change: more frequent and destructive hurricanes, ice rains, heat, drought, floods. Moreover, over the past decade, the number of natural hazards that cause significant damage to human health and the economy, according to the Hydrometeorological Center, has more than tripled.</p><br>
+			<p>Scientific research has shown that modern warming is due to an increase in the concentration of greenhouse gases in the Earth's atmosphere. It cannot be explained by natural cycles, it is primarily associated with human activities: the burning of fossil fuels - oil, coal and gas - in power plants and in internal combustion engines, the reduction of forest area, including due to fires, the decomposition of organic waste in landfills, agriculture, especially animal husbandry.</p><br>
+			<p>The depletion of already developed forests is forcing loggers to go for timber to distant regions of the wild taiga or by hook or by crook to cut down the most valuable forests in densely populated areas.</p><br>
+			<p>A forest for economic purposes, with the right approach, can be grown in several decades. But ecosystems of wild forests as a result of industrial felling are destroyed irreversibly - even for their partial restoration it will take centuries, and full restoration is completely impossible.</p><br>
+			<p>Rare species of animals perish because of clear-cuttings in the wild valuable forest. To save the reindeer population from extinction, it is necessary to keep several million hectares of forest intact. Improper felling even undermines fish stocks. When the forest is cut down, clay and dead organic matter are washed into the rivers, the settling mud can destroy the eggs of some of the most valuable and rare fish. For example, salmon caviar must be washed with clean and oxygen-rich water, otherwise it dies. You cannot cut down valuable forest in pieces: as a result of a violation of the integrity of the system, a bark beetle can penetrate into the forest and destroy the entire remaining territory.</p><br>
+			<p>Fires are a global problem, as they have a huge impact on the planet's climate. Soot from fires reaches the Arctic and settles on the ice, increasing their melting, and during combustion, carbon dioxide is released into the atmosphere - one of the gases responsible for the greenhouse effect and climate change.</p><br>
+			<p>Sometimes a fire from a field or forest spreads to residential buildings and other buildings, acrid smoke fills cities and harms the health of people (especially children, allergy sufferers and asthmatics, the elderly suffer).</p>
+
+
+			<div class="comment-box">
+				<h3>Leave a Comment</h3>
+				<form class="comment-form">
+					<input type="text" placeholder="Enter Name">
+					<input type="email" placeholder="Enter Email">
+					<textarea rows="5" placeholder="Enter Comment"></textarea>
+					<button class="hero-btn red-btn">Post</button>
+					<p>Now this does not work, so you can write to the mail: admiralgeneral2003@gmail.com</p>
+				</form>
+			</div>
+
+		</div>
+		<div class="blog-right">
+			<h3>Post Categories</h3>
+			<div>
+				<span>Ecologist</span>
+				<span>#1</span>
+			</div>
+			<div>
+				<span>Zoologist</span>
+				<span>#2</span>
+			</div>
+			<div>
+				<span>Volunteer</span>
+				<span>#3</span>
+			</div>
+			<div>
+				<span>Philanthropist</span>
+				<span>#4</span>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

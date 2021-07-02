@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<section class="sub-header">
+	<nav>
+		<a href="{% url 'pages:home' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages:home' %}">HOME</a></li>
+				<li><a href="{% url 'pages:about' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages:source' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages:blog' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>Contact Us</h1>
+</section>
+<!-- ----- Contact ----- -->
+
+<secction class="location">
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d143543.2389387769!2d48.93322039040878!3d55.79561489301278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x415ead2b7caccd99%3A0x7fcb77b9b5ad8c65!2z0JrQsNC30LDQvdGMLCDQoNC10YHQvy4g0KLQsNGC0LDRgNGB0YLQsNC9!5e0!3m2!1sru!2sru!4v1624974987458!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</secction>
+
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+			<div>
+				<i class="fa fa-home"></i>
+				<span>
+					<h5>Russia, Kazan, RT</h5>
+				</span>
+			</div>
+			<div>
+				<i class="fa fa-envelope-o"></i>
+				<span>
+					<h5>admiralgeneral2003@gmail.com</h5>
+					<p>Email Us Your Query</p>
+				</span>
+			</div>
+		</div>
+		<div class="contact-col">
+			<form action="" method="post">
+				<input type="text" name="name" placeholder="Enter Your Name" required>
+				<input type="email" name="email" placeholder="Enter Email Addres" required>
+				<input type="text" name="subject" placeholder="Enter Your Subject" required>
+				<textarea rows="8" name="message" placeholder="Message" required></textarea>
+				<button type="submit" class="hero-btn red-btn">Send Message</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+{% endblock %}

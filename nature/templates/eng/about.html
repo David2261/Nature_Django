@@ -1,0 +1,39 @@
+{% extends 'eng/base.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+{% block content %}
+<section class="sub-header">
+	<nav>
+		<a href="{% url 'pages_eng:home_eng' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages_eng:home_eng' %}">HOME</a></li>
+				<li><a href="{% url 'pages_eng:about_eng' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages_eng:source_eng' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages_eng:blog_eng' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+				<li><a href="{% url 'pages:about' %}" class="hero-btn red-btn">Rus. Version</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>About Us</h1>
+</section>
+<!-- ----- About us Content ----- -->
+<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+			<h1>We Make The World A Better Place</h1>
+			<p>Our goal is to preserve the natural conditions necessary for the life of people on Earth, for the further development of production and culture. The essence of environmental protection is the establishment of constant dynamic harmony between a developing society and nature, which serves it both as a sphere and a source of life.</p>
+			<a href="https://www.greenpeace.org/" class="hero-btn red-btn">GP</a>
+			<a href="https://www.worldwildlife.org/" class="hero-btn red-btn">WWF</a>
+			<a href="https://www.ifaw.org/uk" class="hero-btn red-btn">IFAW</a>
+			<a href="{% url 'pages_eng:source_eng' %}" class="hero-btn red-btn">HELP NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="{% static 'img/about.jpg' %}">
+		</div>
+	</div>
+</section>
+{% endblock %}

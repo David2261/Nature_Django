@@ -1,0 +1,132 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="header">
+	<nav>
+		<a href="{% url 'pages:home' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages:home' %}">HOME</a></li>
+				<li><a href="{% url 'pages:about' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages:source' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages:blog' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+				<li><a href="{% url 'pages_eng:home_eng' %}" class="hero-btn red-btn">Eng. Version</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+<div class="text-box">
+	<h1>Nature</h1>
+	<p>Спасите животных и природу от вымирания</p>
+	<a href="{% url 'pages:source' %}" class="hero-btn">Посетите нас, чтобы узнать больше</a>
+</div>
+
+</section>
+
+
+<!----- Nature ----->
+
+<sectio class="course">
+	<h1>Problems</h1>
+	<p>На должной высоте должны быть наши идеалы, а не архитектурные излишества. Можно ли кого-нибудь убедить в этом. Я честно делал попытки, но не преуспел.</p>
+	<div class="row">
+		<div class="course-col">
+			<h3>Загрязнение воздуха</h3>
+			<p>Микроскопические загрязнители – PM2.5 – настолько малы, что могут проникать сквозь защитные барьеры нашего организма, такие как слизистые оболочки, и разрушать наши легкие, сердце и мозг.</p>
+		</div>
+		<div class="course-col">
+			<h3>Убийство животных</h3>
+			<p>Чтобы получить килограмм мяса, требуется 2 литра нефти. При современных методах животноводства, выделяются больше отравляющих газов, чем во всех транспортных средствах в совокупности. Поэтому все кто борются за экологию и убеждают нас есть меньше мяса.</p>
+		</div>
+		<div class="course-col">
+			<h3>Уничтожение живой природы</h3>
+			<p>Между 1980 и 2000 годами утрачено 100 млн гектаров тропических лесов, в основном за счет расчистки лесных массивов в Южной Америке под выпас скота, а в Юго-Восточной Азии - под плантации масличных пальм.</p>
+		</div>
+	</div>
+</sectio>
+<!-- ----- Worlds ----- -->
+<section class="campus">
+	<h1>Environment</h1>
+	<p>"Гибралтар" Я думаю о сотнях никому неизвестных смельчаков, которые гибнут каждый год, пытаясь добраться до этой скалы. Для тех кто живет в Африке, Гибралтар — это символ новой жизни. Можно ли запретить мечты о лучшей жизни, ведь это то к чему люди стремятся из спокон веков.</p>
+	<div class="row">
+		<div class="campus-col">
+			<img src="{% static 'img/nature.jpg' %}">
+			<div class="layer">
+				<h3>Nature</h3>
+			</div>
+		</div>
+		<div class="campus-col">
+			<img src="{% static 'img/panda.jpg' %}">
+			<div class="layer">
+				<h3>Animal</h3>
+			</div>
+		</div>
+		<div class="campus-col">
+			<img src="{% static 'img/cityRain.jpg' %}">
+			<div class="layer">
+				<h3>People</h3>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- ----- Facilities ----- -->
+<section class="facilities">
+	<h1>Out on a Limb</h1>
+	<p>Мы теперь такие могущественные, что можем опорожнить море, словно эта ванна. Мы нередко получаем предупреждения о нависшей катастрофе, но не в состояние представить, когда она уже случилась и это было на Аральском море.</p>
+	<div class="row">
+		<div class="facilities-col">
+			<img src="{% static 'img/landMountain.jpg' %}">
+			<h3>Nature</h3>
+			<p>Кто бы мог подумать, что с этим можно столкнуться здесь в Непале. В самых высоких горах, где воздух казалось бы должен быть чистым. Ученые доказали, что на вершине Гималайского хребта, воздух такой же загрязнённый, как в наших городах. Из-за потоков атмосферного воздуха, который задерживается горами.</p>
+		</div>
+		<div class="facilities-col">
+			<img src="{% static 'img/oceanWhale.jpg' %}">
+			<h3>Animas</h3>
+			<p>Некогда нефти дала китам шанс, в начале 19-го века на них охотились. Их жир жгли в масленных лампах, им смазывали детали машин. Когда его стало не хватать, его постепенно вытесняла нефть, для китов она стала спасением. Парадокс или иллюзия, ибо охоту начали снова.</p>
+		</div>
+		<div class="facilities-col">
+			<img src="{% static 'img/china.jpg' %}">
+			<h3>People</h3>
+			<p>Интенсивное развитие сельского хозяйства 60-ые годы в Индии. Спасло от голода, но при этом истощила, подпочвенные воды. Когда колодцы высыхают здесь, начинают рыть водоемы, когда вступят в права период дождей. Мы в своем мире просто забыли, о том насколько важна вода.</p>
+		</div>
+	</div>
+</section>
+<!-- ----- TestiMonials ----- -->
+
+<section class="testimonials">
+	<h1>What Our Student Says</h1>
+	<p>Да, действительно защитниками экологии не рождаются, ими становятся. Земля наша ещё прекрасней, чем можно себе воображать.</p>
+	<div class="testimonials-col">
+		<img src="{% static 'img/girl.jpg' %}">
+		<div>
+			<p>Я многое обрела, многому научилась. Теперь я хочу, чтобы и вы познакомились с этим.</p>
+			<h3>Aiony Haust</h3>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-half-o"></i>
+		</div>
+	</div>
+	<div class="testimonials-col">
+		<img src="{% static 'img/boy.jpg' %}">
+		<div>
+			<p>Благодаря этому сайту, я познакомился со всей красотой мира, который окружает меня.</p>
+			<h3>Nicolas Horn</h3>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star"></i>
+			<i class="fa fa-star-o"></i>
+		</div>
+	</div>
+</section>
+<!-- ----- Call To Action ----- -->
+<section class="cta">
+	<h1>Contact Us To Make <br>The World a Better Place</h1>
+	<a href="{% url 'pages:contact' %}" class="hero-btn">CONTACT US</a>
+</section>
+{% endblock %}

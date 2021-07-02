@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Source{% endblock %}
+{% block content %}
+<section class="sub-header">
+	<nav>
+		<a href="{% url 'pages:home' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages:home' %}">HOME</a></li>
+				<li><a href="{% url 'pages:about' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages:source' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages:blog' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+				<li><a href="{% url 'pages_eng:source_eng' %}" class="hero-btn red-btn">Eng. Version</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>All Source</h1>
+</section>
+<!----- Source ----->
+<sectio class="course">
+	<h1>Problems</h1>
+	<p>Сильных людей трудности делают еще сильнее, и, как ни странно, бодрее, а слабые становятся злыми, и это их разрушает.</p>
+	<div class="row">
+		<div class="course-col">
+			<h3>Загрязнение воздуха</h3>
+			<p>Уровень загрязнения воздуха остается опасно высоким во многих регионах планеты. По новым данным Всемирной организации здравоохранения (ВОЗ), 9 из 10 человек дышат воздухом с высокой концентрацией загрязняющих веществ. Тревогу вызывают обновленные оценки, согласно которым каждый год загрязнение окружающего (атмосферного) воздуха и воздуха внутри помещений уносит 7 миллионов жизней.</p>
+		</div>
+		<div class="course-col">
+			<h3>Убийство животных</h3>
+			<p>В прибрежных водах Мавритании много рыбы, поэтому здесь много рыболовецких судов. Они страдают от жестокой конкуренции из-за того что запасы рыбы радикально уменьшились. 96% рыбаков всего мира ловят самым примитивным способом, но предъявляют лишь 30% улова.</p>
+		</div>
+		<div class="course-col">
+			<h3>Уничтожение живой природы</h3>
+			<p>Один литр машинного масла способен загрязнить более 1 миллиона литров питьевой воды. Многие люди могут подумать, что 1 миллион литров чистой воды – это реально много, но именно столько воды в год выпивает всего лишь 12 - 13 людей.</p>
+		</div>
+	</div>
+</sectio>
+<!-- ----- Facilities ----- -->
+<section class="facilities">
+	<h1>Out on a Limb</h1>
+	<p>Мы лишь недавно начали понимать как важны для нас эти леса. Хотя они от нас так далеко. Ведь они помогают поддерживать все общее равновесие, где у всего есть свое место и от которого мы всецело зависим. Больше невозможно в одном месте сберегать, а в другом расхищать. Ибо все взаимосвязано.</p>
+	<div class="row">
+		<div class="home-left">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/oB2C0l_0nAg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="home-right">
+			<h3>HOME</h3>
+			<p>Ни для кого не секрет, что за время своего существования человек исчерпал огромное количество природных ресурсов. Но, возможно, не все знают, что человечество движется к глобальной катастрофе гораздо быстрее, чем мы думали. Согласно недавно вышедшему документальному фильму "ДОМ"  ("HOME" в оригинальной версии), уже через 10 лет население планеты Земля может столкнуться с мировым катаклизмом, который заденет всех без исключения.<br><br>Режиссер фильма - Ян Артюс Бертран, а продюссер - Люк Бессон. В создании картины принимали участие множество стран. Главным спонсором же выступила группа PPR (Pinault-Printemps-Redoute), в которую входят многие компании из индустрии люкс, автомобильного производства и культурной сферы. Например, в ней состоит группа Gucci Group, являющаяся вторым крупнейшим оператором в мире люкса. В связи с этим появились слухи, что фильм является актом greenwashing'a ( я не знаю, есть ли эквивалент в русском, но это когда крупные компании тратят кучу денег на то, чтобы убедить всех в том, что они ответственны в экологическом плане, хотя на деле они тратят больше денег на "ложную рекламу", чем на то, чтобы на самом деле инвестировать в более экологичные пути производства).<br><br>В любом случае, greenwashing это или нет, я думаю, что фильм стоит посмотреть всем и что он поднимает действительно серьезные и важные вопросы, над которыми следует задуматься всем нам, а в первую очередь правительствам всех стран. В конце концов, когда речь идет о будущем планеты, не важно кто за что заплатил, а важно, чтобы все страны объединились для того, чтобы и наше и будущие поколения могли жить на планете Земля.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="human-col">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/KYI_-heyM40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="human-layer">
+				<h3>HUMAN Vol. 1</h3>
+			</div>
+		</div>
+		<div class="human-col">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/4FZAb79mZO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="human-layer">
+				<h3>HUMAN Vol. 2</h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="human">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/sxvKj01ltOQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="human-layer">
+				<h3>HUMAN Vol.3</h3>
+			</div>
+		</div>
+		<div class="human-right">
+			<h3>HUMAN</h3>
+			<p>Что же делает нас людьми? Способность любить и бороться? То, что мы смеёмся? Плачем? Любопытство? Стремление к открытиям?<br><br>Все эти вопросы волнуют продюсера и художника Янна Артус-Бертранда, который уже три года собирает истории из жизни разных людей. Он уже собрал рассказы о жизни 2000 женщин и мужчин из 60 стран мира. Янн работает с командой преданных переводчиков, журналистов и операторов. С их помощью ему удалось получить откровенные и глубоко эмоциональные беседы на темы, которые объединяют всех нас: борьба с бедностью, войны, гомофобия и будущее нашей планеты, и, конечно, все это связано с личными моментами любви и счастья.<br>Посмотрите 3 тома нашего фильма и подумайте с нами Что делает нас людьми. #WhatMakesUsHUMAN</p>
+		</div>
+	</div>
+</section>
+{% endblock %}

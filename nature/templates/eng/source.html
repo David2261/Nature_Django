@@ -1,0 +1,83 @@
+{% extends 'eng/base.html' %}
+{% load static %}
+{% block title %}Source{% endblock %}
+{% block content %}
+<section class="sub-header">
+	<nav>
+		<a href="{% url 'pages_eng:home_eng' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages_eng:home_eng' %}">HOME</a></li>
+				<li><a href="{% url 'pages_eng:about_eng' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages_eng:source_eng' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages_eng:blog_eng' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+				<li><a href="{% url 'pages:source' %}" class="hero-btn red-btn">Rus. Version</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>All Source</h1>
+</section>
+<!----- Source ----->
+<sectio class="course">
+	<h1>Problems</h1>
+	<p>Difficulties make strong people even stronger, and, oddly enough, more cheerful, and the weak become evil, and this destroys them.</p>
+	<div class="row">
+		<div class="course-col">
+			<h3>Air pollution</h3>
+			<p>Air pollution levels remain dangerously high in many parts of the world. According to new data from the World Health Organization (WHO), 9 out of 10 people breathe air with a high concentration of pollutants. Alarmingly, updated estimates show that 7 million lives are lost from ambient (atmospheric) and indoor air pollution each year.</p>
+		</div>
+		<div class="course-col">
+			<h3>Killing animals</h3>
+			<p>There is a lot of fish in the coastal waters of Mauritania, so there are many fishing boats here. They suffer from fierce competition due to the fact that fish stocks have drastically decreased. 96% of the world's fishermen catch in the most primitive way, but present only 30% of the catch.</p>
+		</div>
+		<div class="course-col">
+			<h3>Destruction of wildlife</h3>
+			<p>One liter of engine oil can contaminate more than 1 million liters of drinking water. Many people may think that 1 million liters of clean water is really a lot, but that is how much water only 12-13 people drink per year.</p>
+		</div>
+	</div>
+</sectio>
+<!-- ----- Facilities ----- -->
+<section class="facilities">
+	<h1>Out on a Limb</h1>
+	<p>We have only recently begun to understand how important these forests are to us. Although they are so far from us. After all, they help maintain the overall balance, where everything has its place and on which we are completely dependent. It is no longer possible to save in one place and plunder in another. For everything is interconnected.</p>
+	<div class="row">
+		<div class="home-left">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/jqxENMKaeCU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="home-right">
+			<h3>HOME</h3>
+			<p>It's not a secret for anyone that during its existence, man has exhausted a huge amount of natural resources. But perhaps not everyone knows that humanity is moving towards a global catastrophe much faster than we thought. According to the recently released documentary "HOME" ("HOME" in the original version), in 10 years the population of the planet Earth may face a global cataclysm that will affect everyone without exception.<br><br>The film was directed by Jan Arthus Bertrand and produced by Luc Besson. Many countries took part in the creation of the picture. The main sponsor was the PPR (Pinault-Printemps-Redoute) group, which includes many companies from the luxury, automotive and cultural industries. For example, it includes the Gucci Group, the world's second largest luxury operator. In this regard, there were rumors that the film is an act of greenwashing (I don't know if there is an equivalent in Russian, but this is when large companies spend a lot of money to convince everyone that they are environmentally responsible, although they actually spend more money on "false advertising" than they actually invest in greener production paths).<br><br>In any case, greenwashing or not, I think that the film is worth watching for everyone and that it raises really serious and important questions that should be pondered by all of us, and above all by the governments of all countries. After all, when it comes to the future of the planet, it doesn't matter who paid for what, but it is important that all countries unite so that our and future generations can live on planet Earth.</p>
+		</div>
+	</div>
+	<hr>
+	<div class="row">
+		<div class="human-col">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/vdb4XGVTHkE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="human-layer">
+				<h3>HUMAN Vol. 1</h3>
+			</div>
+		</div>
+		<div class="human-col">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/ShttAt5xtto" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="human-layer">
+				<h3>HUMAN Vol. 2</h3>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="human">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/w0653vsLSqE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="human-layer">
+				<h3>HUMAN Vol.3</h3>
+			</div>
+		</div>
+		<div class="human-right">
+			<h3>HUMAN</h3>
+			<p>What makes us human? The ability to love and fight? What are we laughing at? Crying? Curiosity? Desire for discovery?<br><br>All these questions concern the producer and artist Yann Artus-Bertrand, who has been collecting stories from the lives of different people for three years. He has already collected stories about the lives of 2,000 women and men from 60 countries around the world. Yann works with a team of dedicated translators, journalists and cameramen. With their help, he managed to get frank and deeply emotional conversations on topics that unite us all: the fight against poverty, war, homophobia and the future of our planet, and, of course, all this is connected with personal moments of love and happiness.<br>Watch 3 volumes of our film and think with us What makes us human. #WhatMakesUsHUMAN</p>
+		</div>
+	</div>
+</section>
+{% endblock %}

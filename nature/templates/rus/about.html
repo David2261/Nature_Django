@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock %}
+{% block content %}
+<section class="sub-header">
+	<nav>
+		<a href="{% url 'pages:home' %}"><img src="{% static 'img/nature.svg' %}"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="{% url 'pages:home' %}">HOME</a></li>
+				<li><a href="{% url 'pages:about' %}">ABOUT</a></li>
+				<li><a href="{% url 'pages:source' %}">SOURCE</a></li>
+				<li><a href="{% url 'pages:blog' %}">BLOG</a></li>
+				<li><a href="{% url 'pages:contact' %}">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+	<h1>About Us</h1>
+</section>
+<!-- ----- About us Content ----- -->
+<section class="about-us">
+	<div class="row">
+		<div class="about-col">
+			<h1>We Make The World A Better Place</h1>
+			<p>Наша цель заключается в сохранении природных условий, необходимых для жизни людей на Земле, для дальнейшего развития производства и культуры. Сущность охраны окружающей природной среды состоит в установлении постоянной динамической гармонии между развивающимся обществом и природой, служащей ему одновременно и сферой, и источником жизни.</p>
+			<a href="https://greenpeace.ru/" class="hero-btn red-btn">GP</a>
+			<a href="https://wwf.ru/" class="hero-btn red-btn">WWF</a>
+			<a href="https://www.ifaw.org/uk" class="hero-btn red-btn">IFAW</a>
+			<a href="{% url 'pages:source' %}" class="hero-btn red-btn">HELP NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="{% static 'img/about.jpg' %}">
+		</div>
+	</div>
+</section>
+{% endblock %}
