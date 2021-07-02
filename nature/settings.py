@@ -9,12 +9,12 @@ PROJECT_ROOT = os.path.dirname(__file__)
 sys.path.insert(0, os.path.join(PROJECT_ROOT, 'apps'))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'jc%!1=x8a6f^yw(azwld0bkqc&txr2x4stbd4=3j&vi%1-8cue'
+SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'jc%!1=x8a6f^yw(azwld0bkqc&txr2x4stbd4=3j&vi%1-8cue')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['nature-green.herokuapp.com']
 
 
 # Application definition
@@ -107,9 +107,16 @@ USE_L10N = True
 USE_TZ = True
 
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 
 STATICFILES_DIRS = [
     os.path.join(PROJECT_ROOT, "static"),
+]
+
+STATICFILES_FINDERS = [
+    "django.contrib.staticfiles.finders.FileSystemFinder",
+    "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
